@@ -12,8 +12,8 @@ public interface AccountOperationService {
 
 	UserAccountDto withdraw(AccountActionDto action) throws Exception;
 
-	List<AccountOperationDto> findAllOperationIdUser();
+	UserAccountDto getUserAccount(int id);
 
-	UserAccountDto getUserAccount();
+	List<AccountOperationDto> findAllOperationByIdUser(int idUser);
 
 }

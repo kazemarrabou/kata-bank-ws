@@ -6,6 +6,15 @@ public class AccountOperationDto {
 	private String amount;
 	private String libelle;
 
+	public AccountOperationDto() {
+	}
+
+	public AccountOperationDto(final String dateTransaction, final String libelle, final String amount) {
+		this.dateTransaction = dateTransaction;
+		this.amount = amount;
+		this.libelle = libelle;
+	}
+
 	public String getDateTransaction() {
 		return dateTransaction;
 	}

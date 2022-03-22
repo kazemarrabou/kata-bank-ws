@@ -4,6 +4,7 @@ import com.kata.bank.enums.TypeAction;
 
 public class AccountActionDto {
 
+	private int idUser;
 	private double amount;
 	private String libelle;
 	private TypeAction typeAction;
@@ -30,6 +31,14 @@ public class AccountActionDto {
 
 	public void setLibelle(final String libelle) {
 		this.libelle = libelle;
+	}
+
+	public int getIdUser() {
+		return idUser;
+	}
+
+	public void setIdUser(int idUser) {
+		this.idUser = idUser;
 	}
 
 }
